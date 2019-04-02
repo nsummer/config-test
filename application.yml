@@ -1,0 +1,16 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka/,http://localhost:8011/eureka/
+server:
+  port: 8040
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nsummer/config-test.git
+          username: nsummer
+          password: xia131871

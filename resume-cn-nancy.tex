@@ -1,0 +1,248 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\RequirePackage[slantfont, CJKnumber, boldfont]{xeCJK}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\setCJKmainfont{Kaiti SC}
+\setCJKfamilyfont{hei}{Heiti SC}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\setlength\tabcolsep{6pt}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Nancy Xia} % Your first name
+\familyname{夏南湘} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{兴趣广泛，喜欢技术，追求技术的广度和深度。   }
+%\address{123 Broadway}{City, State 12345}
+\mobile{+86 15257110346}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{nanxiangxia@163.com}
+\homepage{nsummer.github.io}
+\social[github]{nsummer}
+\photo[70pt][0.4pt]{nancy.png} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage%WitOS & A SM$^2$ (smart and small) OS for IoT & https://github.com/maxwit/witos
+
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{教育背景}
+\cventry{2011--2015}{湖南科技学院}{计算机科学与技术}{本科}{}{
+    % 在校期间，学习研究各种计算机技术
+}
+
+
+\section{工作经历}
+\cventry{2014--2020} {灵感软件（上海）有限公司}{2年}{高级Java工程师}{}{
+\begin{itemize}
+    \item 负责健康管理平台的业务模块开发与部署，主要负责职业病健康模块
+\end{itemize}
+}
+
+\cventry{2016--2019} {上海欧电云信息科技有限公司}{3年}{高级Java工程师}{}{
+\begin{itemize}
+    \item 负责电商项目业务模块开发、技术研发
+\end{itemize
+}
+
+%\subsection{Vocational}
+
+\section{项目经历}
+%\subsection{Vocational}
+\cventry{2019--2020}{健康管理平台}{1年}{高级Java工程师}{}{
+辅助体检中心工作人员管理数据，将体检流程中的部分人工工作变为自动化完成；向企业提供报告查询平台，报告职业病情况
+\\工作内容：
+\begin{itemize}
+    \item 功能模块开发，如员工健康检查表、体检单自动生成；报告管理等
+\end{itemize}}
+\cventry{2017--2019}{供应链管理}{1年半}{高级Java工程师}{}{
+向企业提供供应链整体解决方案，供应链平台：SAAS前台、SAAS运营后台、供应商后台、采购商后台、采购商运营后台
+\\工作内容：
+\begin{itemize}
+    \item 技术研发，功能模块开发，负责模块如：商品管理、供应商管理等
+\end{itemize}}
+
+\cventry{2017-2018}{分销管理平台}{半年}{高级Java开发工程师}{}{
+帮助企业实现渠道分销，支持经销商在线采购、支付、核价、订单交付，会员营销管理、灵活分组、实现多为数据分析、精准营销
+\\使用技术：Spring Boot、MyBatis、Spring Cloud、Bootstrap、Redis、RabbitMQ
+\\工作内容：
+\begin{itemize}
+    \item 功能模块开发，如会员管理、商品管理、佣金管理、商品管理等
+\end{itemize}}
+
+\cventry{2016-2018}{电商系统}{1年半}{Java工程师}{}{
+电商系统为客户提供商品展示、商户管理、门店管理、营销管理等
+\\使用技术：Spring Boot、Spring Cloud、MyBatis、Bootstrap、Redis、RabbitMQ
+\\工作内容：
+\begin{itemize}
+    % \item 技术研发
+    \item 功能模块开发，如用户管理、购物车、优惠券、订单、秒杀等
+\end{itemize}}
+
+\cventry{2014--2016}{派盟管理平台}{1年}{Java开发工程师}{}{
+IOT云端，管理智能终端，一键下发覆盖智能终端组，打通多种支付方式，实现移动支付
+使用技术：Spring、MyBatis、Dubbo、ZooKeeper
+工作内容：
+\begin{itemize}
+    \item 云端功能开发，如设备管理、配置下发、服务商管理、支付方式对接等
+\end{itemize}}
+
+
+%%------------------------------------------------
+%
+%\subsection{Miscellaneous}
+%
+%\cventry{2010--2011}{}{}{}{}{Spent some time finding myself. This was a courageous endeavour that didn't have a job title. It was quite important to my overall development though so I'm adding it to my CV. Also it explains the gap in my otherwise stellar CV.}
+%
+%\cventry{2009--2010}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems. Allowed me to become expert in all forms of martial arts and weaponry.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+%
+%\section{Awards}
+%
+%\cvitem{2011}{School of Business Postgraduate Scholarship}
+%\cvitem{2010}{Top Achiever Award -- Commerce}
+%
+%%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{专业技能}
+
+\cvitem{计算机语言}{掌握Java语言；系统学习过Dart、JS/TS、Kotlin、Python，但缺乏实践开发经验 }
+\cvitem{Web}{了解Flutter常用组件，开发过简单Web和App；使用JS、Bootstrap、HTML5/CSS3开发过简单页面；了解React、Vue }
+\cvitem{基础与理论}{熟悉Thread和异步编程，熟悉Socket编程，有较扎实的数据结构基础；有较扎实的操作系统、计算机网络、数据库理论基础 }
+\cvitem{MVC框架}{熟悉Spring Boot以及相关框架；熟悉MyBatis}
+\cvitem{MSA/SOA}{有微服务开发和实施经验，熟悉Spring Cloud常用组件；了解Dubbo、ZooKeeper } 
+\cvitem{MQ/Cache}{熟悉RabbitMQ，了解RocketMQ、Kafka；熟悉Redis，了解其它常见Cache，会使用ProxySQL }
+\cvitem{Agile}{有敏捷开发实践经验，包括：测试驱动、看板、issue管理、workflow、code review，会用Gitlab、Jira }
+\cvitem{DevOps}{有基本的DevOps经验，部署过Jenkins；会使用Ansible；熟悉Docker基本操作，用K8S部署过Spring Cloud微服务集群；熟悉KVM基本操作，会使用KVM部署简单的集群，了解OpenStack }
+\cvitem{数据库}{熟悉MySQL常用操作，读写分离，高可用，中间件Mycat，有分库分表概念；了解NoSQL和MongoDB，但无实际开发经验 }
+\cvitem{Web Server}{了解TCP/IP协议栈，熟悉HTTP协议规范；部署过HTTP、TFTP、DNS、DHCP、Nginx、Tomcat等服务 }
+\cvitem{软件测试}{有代码健壮性意识，有单元测试开发经验，会使用MockMVC、JUnit、TestNG，会使用Jmeter }
+
+\section{兴趣爱好}
+\cvitem{}{喜欢跳舞、独轮车、滑板}
+
+% \section{开源项目}
+% \begin{tabular}{cll}
+% \hline
+% \textbf{ladder-web} & \textbf{开发⼯作站搭建及配置⼯} & \textbf{https://github.com/debug-live/ladder-web.git} \\
+% \hline
+
+% \hline
+% \end{tabular}
+%\end{table}
+%\cvitem{WitOS}{A SM$^2$ (smart and small) OS for IoT. https://github.com/maxwit/witos}
+%\cvitem{WitHost}{A powerful utility for server deployment. https://github.com/maxwit/withost}
+%\cvitem{Lablin}{A way to customize Linux for your device. https://github.com/maxwit/lablin}
+%\cvitem{SoftSoC}{An ARM SoC emulator similar to qemu (deprecated)}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills}
+%
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+%
+%%----------------------------------------------------------------------------------------
+%%	LANGUAGES SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\section{Languages}
+%
+%\cvitemwithcomment{English}{Mothertongue}{}
+%\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+%
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+%\cvlistdoubleitem{Fishing}{Chess}
+%\cvlistdoubleitem{Literature}{Handwriting}
+%\cvlistdoubleitem{Running}{Driving}
+%\cvlistitem{...}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
